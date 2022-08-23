@@ -1,0 +1,58 @@
+.loader-container {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+.loader {
+  background: transparent;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-bottom: 0.2em;
+  animation: resize 2s linear 0s infinite;
+}
+body {
+  background: black;
+}
+.loader-middle {
+  background: url("download.png") center/cover no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+  animation: loading 2s linear 0s infinite;
+}
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+}
+@keyframes resize {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.6);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-270deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
